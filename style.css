@@ -1,0 +1,99 @@
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+  list-style-type: none;
+}
+
+body {
+  font-family: "open sans" , "montserrat", Arial, Helvetica, sans-serif;
+  /* color: white; */
+}
+
+.container {
+  background-color: #1ABC9C;
+  height: 100vh;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 20px;
+}
+
+.main-logo {
+  width: 130px;
+}
+
+.container-1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.login-container {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  height: 480px;
+  border-radius: 8px;
+  padding: 20px;
+}
+
+.login-container form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 100%;
+}
+
+input, button {
+  padding: 8px 12px;
+  width: 500px;
+  border: none;
+}
+
+.icon-container {
+  background-color:#cdcdcd;
+  border: 1px solid;
+  display: flex;
+  align-items: center;
+  border-radius: 4px;
+  overflow: hidden;
+  width: 500px;
+  border: 1px solid hsla(0, 2%, 66%, 0.321);
+}
+
+.icon-container input {
+  height: 50px;
+  flex: 1;
+  border: none;
+  padding: 20px;
+  font-size: 18px;
+}
+
+.icon-container input::placeholder {
+  color: #aaa;
+}
+
+.icon-container input:focus {
+  outline: none;
+}
+
+button {
+  text-align: center;
+  border-radius: 4px;
+  margin: 8px;
+  height: 60px;
+  font-size: 20px;
+  background-color: #1ABC9C;
+  color: white;
+}
+
+.container-3 {
+  position: absolute;
+  bottom: 0;
+}

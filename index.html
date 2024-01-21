@@ -1,11 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SIMKULIAH</title>
+  <link rel="shortcut icon" href="/images/usk.png" type="image/logo">
+  <!-- FONT LINK -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+    rel="stylesheet">
+
+  <!-- ICONS LINK -->
+
+  <script src="https://unpkg.com/feather-icons"></script>
+
+  <!-- CSS LINK -->
+
+  <link rel="stylesheet" href="style.css">
+
 </head>
+
 <body>
-    
+  <div class="container">
+    <div class="container-1">
+      <img class="main-logo" src="/images/usk.png" alt="">
+      <h1 style="color: #FFA84C; font-weight: bold; margin-bottom: 8px;">SIMKULIAH</h1>
+      <p style="font-style: italic; font-weight: 700; font-size: 18px;">Sistem Informasi Perkuliahan</p>
+    </div>
+    <div class="login-container">
+      <h3
+        style="border-bottom: 1px solid rgba(127, 126, 126, 0.293); vertical-align: bottom; padding-bottom: 30px; margin: 8px; font-size: 25px; font-weight: 400;">
+        Login Dengan Akun SIMPEG/KRS</h3>
+      <form action="">
+        <div class="icon-container">
+          <i data-feather="user"
+            style="color: white; width: 50px; stroke-width: 3; size: 2px; background-color: #cdcdcd;"></i><input
+            type="text" placeholder="NIP/NPM">
+        </div>
+        <div class="icon-container">
+          <i style="color: white; width: 50px; stroke-width: 3; size: 2px; background-color: #cdcdcd;"
+            data-feather="key"></i>
+          <input type="password" name="password" placeholder="Password">
+        </div>
+        <a href="/core/core.html"><button type="button"><i data-feather="unlock" style="margin-right: 6px;"></i>Login</button></a>
+        <button type="button" X><i data-feather="unlock" style="margin-right: 6px;"></i>Login Single Sign On
+          USK</button>
+      </form>
+    </div>
+    <div class="container-3">
+      <p style="color: white; font-size: 18px;">2024 &#169; UPT TIK Universitas Syiah Kuala</p>
+    </div>
+  </div>
+
+  <!-- ICONS LINK -->
+  <script>
+    feather.replace();
+  </script>
+  <script src="index.js"></script>
 </body>
+
 </html>
