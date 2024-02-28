@@ -1,6 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght=0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght=0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght=0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 /* the imported fonts*/
 
@@ -70,6 +70,7 @@ body {
 }
 
 #menuButton {
+    background-color: none;
     position: absolute;
     color: white;
     stroke-width: 3;
@@ -81,6 +82,7 @@ body {
 .right-container {
     display: flex;
     align-items: center;
+    width: 40%;
 }
 
 .user-image img{
@@ -127,7 +129,7 @@ body {
 
 /* content */
 .content {
-    width: 100%;
+    /* width: 100%; */
     background-color: var(--body-color);
     height: 100vh;
     display: flex;
@@ -163,30 +165,108 @@ body {
     color: white;
 }
 
+/* .list a:nth-child(1)::after {
+    content: '';
+    color: #2ed8b6;
+} */
+
 .list a:hover {
     color: #2ed8b6;
 }
 
-/* main */
-.main-container {
-    width: 100%;
-    display: flex;
-    justify-content: center;
+/* class to hide the sidebar text */
+.hide-text {
+    align-items: center;
+    width: 70px;
 }
 
-.inner-container {
-    width: 1000px;
+.hide-text .list a li span {
+    display: none;
+}
+
+.hide-text .sidebar-profession {
+    display: none;
+    opacity: 0;
+}
+
+/* main */
+.main-container {
+    /* width: 100%; */
+    display: flex;
+    padding: 28.8px;
+}
+
+.inner-content {
+    width: 100%;
     padding: 1.8rem;
 }
 
 .main-container h1{
     margin-bottom: 20px;
+    color: #4a6076;
 }
+
 .presence-box {
     display: flex;
     flex-direction: column;
     background-color: white;
     border-top: 4px solid #8CDDCD;
+    padding: 16px;
 }
 
+.close-information {
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    overflow: hidden;
+    width: 1100px;
+    margin: 20px;
+    text-wrap: wrap;
+    font-weight: 500;
+    position: relative;
+    height: 70px;
+}
 
+.close-information a {
+    display: block; /* Make the link a block-level element */
+    margin-top: 5px; /* Add some spacing between the text and the link */
+}
+
+.adjust-the-width {
+    width: 1400px;
+}
+
+/* adjust the close-information class width */
+
+.close-information:nth-child(1) {
+    border: 1px solid #3498DB;
+    color: #3498DB;
+}
+
+.close-information:nth-child(2) {
+    border:1px solid #f1c40f;
+    color: #f1c40f;
+}
+
+.close-information .alert {
+    background-color: #3498DB;
+}
+
+.close-information:nth-child(2) .alert {
+    background-color: #f1c40f;
+}
+
+.alert {
+    height: 70px;
+    width: 70px;
+    color: white;
+    margin-right: 20px;
+    padding: 20px;
+}
+
+/* responsive for phone */
+@media screen and (max-width: 767px) {
+
+    
+
+}

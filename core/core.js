@@ -21,3 +21,27 @@ function updateDateTime() {
 
   // Initial update
   updateDateTime();
+
+const menuButton = document.getElementById("menuButton");
+const sidebarContainer = document.querySelector(".sidebar-container"),
+      sidebarProfession = document.querySelector(".sidebar-profession"),
+      closeInformation = document.querySelectorAll(".close-information");
+
+
+
+menuButton.addEventListener("click", function() {
+  console.log("hehe");
+  sidebarContainer.classList.toggle("hide-text"); 
+  sidebarProfession.classList.toggle("hide-text"); 
+  
+    // Iterate through closeInformationList and toggle the class on each element
+    closeInformation.forEach((closeInformation) => {
+      closeInformation.classList.toggle("adjust-the-width");
+    });
+});
+
+const namaSaya = (nama) => {
+  return `nama saya adalah: ${nama}`;
+}
+
+console.log(namaSaya('thariq isyraq'))
